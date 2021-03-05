@@ -1,0 +1,23 @@
+server:
+ port: 9096
+ 
+spring:
+ application:
+  name: CONFIG-SERVER
+ cloud:
+  config:
+   server:
+    git:
+     uri: https://github.com/harimanda123/config-server.git
+     clone-on-start: true
+     username: harimanda123
+     password: Virinchi!1
+     
+eureka:
+ client:
+  register-with-eureka: true
+  fetch-registry: true
+  service-url:
+   defaultZone: http://localhost:9093/eureka/
+ instance:
+  hostname: localhost
