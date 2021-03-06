@@ -6,7 +6,7 @@ pipeline {
     stages {
         stage('Maven Build') {
             steps {
-               sh "mvn clean install"
+               sh "mvn clean install -Dmaven.test.skip=true"
             }
         }
     }
