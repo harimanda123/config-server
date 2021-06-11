@@ -1,13 +1,14 @@
-package com.techhmr.configserver;
+package com.qualitto;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class TechhmrConfigserverApplicationTests {
+class ConfigServerAppTests {
 
 	@Test
 	void contextLoads() {
+		//
 	}
 
 }

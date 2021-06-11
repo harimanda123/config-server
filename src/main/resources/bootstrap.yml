@@ -1,0 +1,21 @@
+server:
+   port: 7777
+spring:
+   application:
+      name: config-server
+   profiles:
+      active: local
+   cloud:
+      config:
+         server:
+            git:
+               uri: https://github.com/qualitto/config.git
+               cloneOnStart: true
+               searchPaths: '{profile}'
+               force-pull: true
+               skipSslValidation: true
+management:
+   endpoints:
+      web:
+         exposure:
+            include: '*'
