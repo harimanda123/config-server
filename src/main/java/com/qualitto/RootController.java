@@ -8,6 +8,6 @@ public class RootController {
 
 	@GetMapping("/health")
 	public String healthChk() {
-		return "Config Server Service OK";
+		return "Config Server Service OK 1.0.0";
 	}
 }
