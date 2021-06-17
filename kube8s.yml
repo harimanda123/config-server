@@ -3,7 +3,7 @@ apiVersion: apps/v1
 metadata:
    name: config-server
 spec:
-   replicas: 2
+   replicas: 1
    selector:
       matchLabels:
          app: config-server
@@ -27,10 +27,7 @@ metadata:
    labels:
       app: config-server-k8srv
 spec:
-   type: NodePort
    ports:
-   -  nodePort: 30001
-      port: 7777
-      targetPort: 7777
+    - port: 7777
    selector:
       app: config-server
